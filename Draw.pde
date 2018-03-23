@@ -1,7 +1,7 @@
 int drawCount = 0;
 int nLogInterval = 5;
 int logIntervalIndex = 0;
-int[] logInterval = {1, 100, 1000, 2000, 3000};
+int[] logInterval = {1, 10, 1000, 2000, 3000,10000};
 int tstart = 0;
 int[] baseline;
 
@@ -13,6 +13,7 @@ void draw()
   
   drawGraph();
   
+  
   drawControl();
   drawLogo();
   drawInfo();
@@ -20,10 +21,12 @@ void draw()
   if (0 == drawCount % logInterval[logIntervalIndex])
     {
         int telapsed = millis() - tstart;
+        dataLogger.setCurrentTime(millis());
         dataLogger.setTs(telapsed);
         dataLogger.logData(data);
         drawCount = 0;
     }
+    drawCount++;
 }
 
 void drawControl()

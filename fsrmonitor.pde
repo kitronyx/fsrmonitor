@@ -10,7 +10,7 @@ DataLogger dataLogger;
 
 // icon and title
 final static String ICON = "snowforce.png";
-final static String TITLE = "snowforce";
+final static String TITLE = "FsrMonitor";
 final int MAXVAL = 255;
 int MAXDRIVE = 16;
 int MAXSENSE = 10;
@@ -147,8 +147,7 @@ boolean getData()
               for (int i = 0; i < nread; i++) resp[offset + i] = (int)(buffer[i]) & 0xFF;              
               offset += nread;              
           }
-          
-          if(nread==0)return false;
+          if(nread==0) return false;
           if (offset == NDRIVE*NSENSE) break;
       }    
       if (offset != NDRIVE*NSENSE) return false;    

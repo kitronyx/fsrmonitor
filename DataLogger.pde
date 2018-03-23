@@ -17,16 +17,20 @@ class DataLogger
     int data_length = NDRIVE*NSENSE;
     int ts = 0; // ms
     boolean log_frame_interval = true;
+    int starttime = 0;
+    String currentTime = "";
     
     void createFileNameBasedOnTime()
     {
         String date = String.format("%04d%02d%02dT%02d%02d%02d", year(), month(), day(), hour(), minute(), second());
-        println(date);
+        //println(date);
         filename_1d = dataPath(date + "-1d.csv");
     }
     
     void startLog(int nrow, int ncol)
     {
+        starttime = millis();
+        println(starttime);
         try
         {
             pw_1d = new PrintWriter(new FileWriter(filename_1d, true));
@@ -59,7 +63,7 @@ class DataLogger
         {
             if (log_frame_interval == true)
             {
-                pw_1d.println(ts + "," + convert2DArrayTo1DString(d));
+                pw_1d.println(currentTime + "," + convert2DArrayTo1DString(d));
             }
             else
             {
@@ -75,7 +79,7 @@ class DataLogger
         
         for (int i = 0; i < 8; i++){
                 out = out + d[i][0] + ",";
-                print(d[i][0]+", ");
+                //print(d[i][0]+", ");
         }
         out = out + d[15][0] + ",";
         out = out + d[14][0] ;       
@@ -112,5 +116,9 @@ class DataLogger
     void setTs(int telapsed)
     {
         ts = telapsed;
-    }
+  }
+   void setCurrentTime(int mills){
+     //println("outtime: "+mills);
+     currentTime = String.format("%d",mills-starttime);
+   }
 }
