@@ -22,7 +22,7 @@ the graph of the corresponding number changes
 
 
 
-#Shortcut Keys
+## Shortcut Keys
 
 UP : zSize scale x2
 Down : zSizescale /2
