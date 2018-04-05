@@ -7,5 +7,17 @@ Processing visualization app for Kitronyx Snowboard2
 ![Alt text](/res/MainProgram.png "Program")
 
 
+1. check your Port number
+  It is made up of a list of labels, so you can select your port
+  
+2.Select your device type
+  with Aduino or snowforce standard
+  
+3. If you want logging your FsrMonitor test, push this button
+   The data consist of files in csv format(1D,2D)
+   
+
+
+
 
 
