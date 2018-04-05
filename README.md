@@ -17,6 +17,10 @@ Processing visualization app for Kitronyx Snowboard2
    
 ![Alt text](/res/Test_FSR10.png "Test_FSR10")
 
+FSR01 ~ FSR10, When you connecting to FSR ports 1~10,
+the graph of the corresponding number changes
+
+
 
 
 
