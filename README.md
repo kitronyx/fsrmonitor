@@ -15,7 +15,7 @@ Processing visualization app for Kitronyx Snowboard2
 3. If you want logging your FsrMonitor test, push this button
    The data consist of files in csv format(1D,2D)
    
-
+![Alt text](/res/Test_FSR10.png "Test_FSR10")
 
 
 
