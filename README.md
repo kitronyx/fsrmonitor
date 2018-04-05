@@ -24,7 +24,8 @@ the graph of the corresponding number changes
 
 ## Shortcut Keys
 
-UP : zSize scale x2
+UP : zSize scale *2
+
 Down : zSizescale /2
 
 
