@@ -6,27 +6,14 @@ Processing visualization app for Kitronyx Snowboard2
 
 ![Alt text](/res/MainProgram.png "Program")
 
-1. check your Port number
-  It is made up of a list of labels, so you can select your port
-  
-2. Select your device type
-  with Aduino or snowforce standard
-  
-3. If you want logging your FsrMonitor test, push this button
-   The data consist of files in csv format(1D,2D)
+1. check port number from dropdown list
+2. Select your device type: two options are available: 'as Aduino shield' and 'Standalone'
+3. If you want to log test data, click this button. Log data will be saved under 'data' folder with current date and time. Log data uses CSV file format.
    
 ![Alt text](/res/Test_FSR10.png "Test_FSR10")
 
-FSR01 ~ FSR10, When you connecting to FSR ports 1~10,
-the graph of the corresponding number changes
-
-
+10 bar graphs are shown each of which represent strength applied to a FSR sensor attached.
 
 ## Shortcut Keys
-
-UP : zSize scale *2
-
-Down : zSizescale /2
-
-
-
+* UP : zSize scale * 2
+* Down : zSizescale / 2
