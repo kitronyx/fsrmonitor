@@ -12,7 +12,7 @@ Processing visualization app for Kitronyx Snowboard2
    
 ![Alt text](/res/Test_FSR10.png "Test_FSR10")
 
-10 bar graphs are shown each of which represent strength applied to a FSR sensor attached.
+10 bar graphs are shown. Each bar graph represents strength applied to a FSR sensor attached.
 
 ## Shortcut Keys
 * UP : zSize scale * 2
