@@ -10,7 +10,7 @@ DataLogger dataLogger;
 
 // icon and title
 final static String ICON = "snowforce.png";
-final static String TITLE = "FsrMonitor";
+final static String TITLE = "FSR Monitor";
 final int MAXVAL = 255;
 int MAXDRIVE = 16;
 int MAXSENSE = 10;
